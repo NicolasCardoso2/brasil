@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #006400;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    height: 80px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    padding: 2em 0;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.controls button {
+    background-color: #006400;
+    border: none;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.controls button:hover {
+    background-color: #004d00;
+    transform: scale(1.05);
+}
+
+.moto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.moto-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    width: calc(33.33% - 2em);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 2em;
+}
+
+.moto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.moto-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.moto-item h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.moto-item p {
+    font-size: 1.2em;
+    color: #006400;
+    margin: 0.5em 0;
+}
+
+.moto-item button {
+    background-color: #006400;
+    border: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.moto-item button:hover {
+    background-color: #004d00;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
