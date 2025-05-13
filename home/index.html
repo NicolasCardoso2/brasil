@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Motos</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../src/imagem/logo.jpg" alt="Logo da Venda de Motos" class="logo">
+            <h1>Venda de Motos</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="controls">
+                <button id="sortPrice">Ordenar por Preço</button>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Escolha a Marca</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-filter="Yamaha">Yamaha</a>
+                        <a href="#" data-filter="Honda">Honda</a>
+                        <a href="#" data-filter="Outros">Outros</a>
+                        <a href="#" data-filter="all">Todos</a>
+                    </div>
+                </div>
+                <button id="resetView">Voltar</button>
+                <p id="financingMessage" class="hidden">Para financiamento via banco, por favor, entre em contato pelo número <a href="tel:+5547991228337">(47) 99122-8337</a>.</p>
+            </div>
+            <div class="moto-grid">
+                <!-- Motos -->
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/Bros 160.html" class="moto-link">
+                        <img src="../src/imagem/1bros160/bros160_1.jpg" alt="BROS 160">
+                        <h2>BROS 160</h2>
+                        <p>R$ 15.500</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Yamaha">
+                    <a href="../src/motos/Factor 150.html" class="moto-link">
+                        <img src="../src/imagem/2factor150/factor150_1.jpg" alt="FACTOR 150">
+                        <h2>FACTOR 150</h2>
+                        <p>R$ 12.500</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/2Fan 160.html" class="moto-link">
+                        <img src="../src/imagem/2fan160/fan160_1.jpg" alt="FAN 160">
+                        <h2>FAN 160</h2>
+                        <p>R$ 14.900</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/CG150.html" class="moto-link">
+                        <img src="../src/imagem/cg150/cg150_1.jpg" alt="CG150">
+                        <h2>CG150</h2>
+                        <p>R$ 10.800</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Outros">
+                    <a href="../src/motos/Ninja300.html" class="moto-link">
+                        <img src="../src/imagem/ninja300/ninja300_1.jpg" alt="Ninja 300">
+                        <h2>Ninja 300</h2>
+                        <p>R$ 22.500</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/3Fan160.html" class="moto-link">
+                        <img src="../src/imagem/3fan160/fan160_1.jpg" alt="FAN160">
+                        <h2>FAN160</h2>
+                        <p>R$ 13.500</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/Fan125.html" class="moto-link">
+                        <img src="../src/imagem/fan125/fan125_1.jpg" alt="FAN 125">
+                        <h2>FAN 125</h2>
+                        <p>R$ 9.900</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/PCX150.html" class="moto-link">
+                        <img src="../src/imagem/pcx150/pcx150_1.jpg" alt="PCX150">
+                        <h2>PCX150</h2>
+                        <p>R$ 14.900</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Yamaha">
+                    <a href="../src/motos/Neo125.html" class="moto-link">
+                        <img src="../src/imagem/neo125/neo125_1.jpg" alt="NEO 125">
+                        <h2>NEO 125</h2>
+                        <p>R$ 10.900</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div> 
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/Fan150.html" class="moto-link">
+                        <img src="../src/imagem/fan150/fan150_1.jpg" alt="FAN 150">
+                        <h2>FAN 150</h2>
+                        <p>R$ 11.500</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>  
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/Titan160.html" class="moto-link">
+                        <img src="../src/imagem/titan160/titan160_1.jpg" alt="TITAN 160">
+                        <h2>TITAN 160</h2>
+                        <p>R$ 17.900</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/CB300R.html" class="moto-link">
+                        <img src="../src/imagem/cb300r/cb300r_1.jpg" alt="CB300R">
+                        <h2>CB300R</h2>
+                        <p>R$ 1Q.500</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/5Fan160.html" class="moto-link">
+                        <img src="../src/imagem/5fan160/fan160_1.jpg" alt="FAN 160">
+                        <h2>FAN 160</h2>
+                        <p>R$ 17.900</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/6Fan160.html" class="moto-link">
+                        <img src="../src/imagem/6fan160/fan160_1.jpg" alt="FAN 160">
+                        <h2>FAN 160</h2>
+                        <p>R$ 17.900</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Yamaha">
+                    <a href="../src/motos/Fazer150.html" class="moto-link">
+                        <img src="../src/imagem/fazer150/fazer150_1.jpg" alt="FAZER 150">
+                        <h2>FAZER 150</h2>
+                        <p>R$ 11.900</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+                <div class="moto-item" data-brand="Honda">
+                    <a href="../src/motos/1Bros160.html" class="moto-link">
+                        <img src="../src/imagem/bros160/bros160_1.jpg" alt="BROS 160">
+                        <h2>BROS 160</h2>
+                        <p>R$ 15.900</p>
+                        <button>Detalhes</button>
+                    </a>
+                </div>
+            <div class="moto-item" data-brand="Honda">
+                <a href="../src/motos/2Bros160.html" class="moto-link">
+                    <img src="../src/imagem/2bros160/2bros160_1.jpg" alt="BROS 160">
+                    <h2>BROS 160</h2>
+                    <p>R$ 17.900,00</p>
+                    <button>Detalhes</button>
+                </a>
+            </div>
+            <div class="moto-item" data-brand="Honda">
+                <a href="../src/motos/XRE190.html" class="moto-link">
+                    <img src="../src/imagem/xre190/xre190_1.jpg" alt="XRE 190">
+                    <h2>XRE 190</h2>
+                    <p>R$ 20.900,00</p>
+                    <button>Detalhes</button>
+                </a>
+            </div>
+            <div class="moto-item" data-brand="Honda">
+                <a href="../src/motos/CGTitan160.html" class="moto-link">
+                    <img src="../src/imagem/cgtitan160/cgtitan160_1.jpg" alt="CG TITAN 160">
+                    <h2>CG TITAN 160</h2>
+                    <p>R$ 18.500,00</p>
+                    <button>Detalhes</button>
+                </a>
+            </div>                                                                                                                                                                                                                                                                         
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Venda de Motos.</p>
+        <p>Contato: <a href="tel:+5547991228337">(47) 99122-8337</a></p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bros 160 - Detalhes</title>
+    <link rel="stylesheet" href="../style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function trocarFoto() {
+            var img = document.getElementById('motoFoto');
+            if (img.src.includes('2bros160_1.jpg')) {
+                img.src = '../imagem/2bros160/2bros160_2.jpg'; 
+            } else if (img.src.includes('2bros160_2.jpg')) {
+                img.src = '../imagem/2bros160/2bros160_3.jpg'; 
+            } else {
+                img.src = '../imagem/2bros160/2bros160_1.jpg'; 
+            }
+        }
+
+        function mostrarTabelaParcelamento() {
+            var modal = document.getElementById('parcelamentoModal');
+            modal.style.display = 'block';
+        }
+
+        function fecharModal() {
+            var modal = document.getElementById('parcelamentoModal');
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById('parcelamentoModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bros 160 - Detalhes</h1>
+    </header>
+    <main>
+        <div class="moto-detail">
+            <img id="motoFoto" src="../imagem/2bros160/2bros160_1.jpg" alt="Foto da Bros 160">
+            <div class="moto-info">
+                <h1>Bros 160</h1>
+                <h2>Ano: 2019</h2>
+                <h2>Preço: R$ 17.900,00</h2>
+                <div class="moto-description-container">
+                    <div class="moto-description">
+                        <p>Cor: Laranja</p>
+                    </div>
+                    <div class="moto-description">
+                        <p>Km: 38.136</p>
+                    </div>
+                </div>
+                <div class="moto-description-container">
+                    <div class="moto-description">
+                        <p>Combustível: Gasolina</p>
+                    </div>
+                    <div class="moto-description">
+                        <p>Pneu: Semi Novos</p>
+                    </div>
+                </div>
+                <button class="swap-button" onclick="trocarFoto()">Próxima Foto</button>
+                <button class="parcelamento-button" onclick="mostrarTabelaParcelamento()">Ver Parcelamento</button>
+                <div class="button-container">
+                    <a href="../../home/index.html" class="green-button">Voltar para o Catálogo</a>
+                    <a href="https://wa.me/5547991228337?text=Ol%C3%A1,%20estou%20interessado%20na%20moto%20Bros%20160." class="green-button">Comprar pelo WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="parcelamentoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <table id="tabelaParcelamento">
+                <thead>
+                    <tr>
+                        <th>Parcelas</th>
+                        <th>Valor da Parcela (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12</td>
+                        <td>1.725,18</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>1.055,60</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
